@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+}
+.wrapper > button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(250, 174, 186);
+    cursor: pointer;
+    margin-top: 20px;
+}
+.wrapper > button:hover {
+    background-color: rgb(190, 99, 112);
+}
+ p {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.img-wrapper {
+
+    width: 200px;
+}
+.img-wrapper > img {
+    width: 100%;
+}
+.text-wrapper {
+    background-color: rgb(255, 209, 216);
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-top: 50px;
+    display: none
+}
+.el1{
+   display: none; 
+}
+.el2{
+    display: flex;
+    flex-direction: column;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Құрметті 10ә сынып қыздары!!!!</p>
+        <p>8 наурыз мерекелерінмен құттықтаймыз!!!!</p>
+        <div class="img-wrapper"><img src="https://i.gifer.com/JSJ.gif" /></div>
+        <button id="el1" class="btn-wrapper" onclick="handleButton()">Рахмет!!!</button>
+        <div id="el2" class="text-wrapper">
+            <p>Және бұл мейрамды бірге өткізейік</p>
+            <p>Болатын орны: Базархан ата кафесі</p>
+            <p>Уақыты: 16:00</p>
+        </div>
+    </div>
+    <script>
+        const handleButton = () => {
+            const elem1 = document.getElementById("el1");
+            const elem2 = document.getElementById("el2");
+            elem1.classList.add("el1")
+            elem2.classList.add("el2")
+        }
+    </script>
+</body>
+</html>
